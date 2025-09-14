@@ -13,7 +13,7 @@ body {
   padding: 0 2rem;
 }
 
-/* Force logo height = navbar height */
+/* Logo */
 .logo img {
   height: 70px;   /* same as navbar height */
   width: auto;    /* keep aspect ratio */
@@ -56,4 +56,96 @@ body {
 .btn-donate {
   background-color: #f5dc02;
   color: black;
+  border-radius: 4px;
 }
+
+
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* keep items aligned left-to-right */
+  margin: 40px;                /* margin around the whole hero section */
+  gap: 40px;                   /* space between image and text */
+  flex-wrap: wrap;             /* wrap on smaller screens */
+}
+
+/* Hero Image with its own margins */
+.hero-image {
+  flex: 1 1 50%;               /* about half the section */
+  max-width: 700px;
+  margin: 20px;                /* margin just for the image */
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;           /* crops image if needed */
+  border-radius: 10px;
+  display: block;
+}
+
+/* Text sits to the right */
+.hero-text {
+  flex: 1 1 40%;
+  max-width: 600px;
+  margin: 20px;                /* margin just for the text */
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Button */
+.btn-about {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid black;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: background 0.3s;
+}
+
+.btn-about:hover {
+  background: black;
+  color: white;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;   /* stack vertically on mobile */
+    margin: 20px;
+  }
+
+  .hero-image,
+  .hero-text {
+    max-width: 100%;          /* full width for both */
+    margin: 10px 0;           /* less margin on small screens */
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-image img {
+    max-height: 300px;
+  }
+}
+
