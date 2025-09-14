@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #090040; /* Deep blue */
+  height: 70px; /* fixed navbar height */
+  padding: 0 2rem;
+}
+
+/* Force logo height = navbar height */
+.logo img {
+  height: 70px;   /* same as navbar height */
+  width: auto;    /* keep aspect ratio */
+  display: block;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd95e; /* gold highlight */
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+.btn-donate {
+  background-color: #f5dc02;
+  color: black;
+}
