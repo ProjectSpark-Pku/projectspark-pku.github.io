@@ -67,17 +67,28 @@ img {
   color: #ffd95e;
 }
 
+.nav-links a:active{
+  opacity: 0.7;
+  color: #ffd95e;
+}
+
 /* Donate Button (desktop) */
 .btn-donate {
   margin-left: 1rem;
-  background-color: #f5dc02;
-  color: black;
+  background-color: #090040;
+  color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
+  border: solid;
+  border-radius: 10px;
   cursor: pointer;
   text-transform: uppercase;
+  transition: color 0.3s, background-color 0.3s
+}
+
+.btn-donate:hover{
+  background-color: #ffd95e;
+  color: black;
 }
 
 /* Hamburger (hidden by default) */
