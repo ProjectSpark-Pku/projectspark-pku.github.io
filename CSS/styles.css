@@ -68,7 +68,7 @@ img {
 }
 
 .nav-links a:active{
-  opacity: 0.7;
+  opacity: 0.5;
   color: #ffd95e;
 }
 
@@ -168,8 +168,8 @@ img {
 .footer{
   display: flex;
   background:#090040;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
+  
 }
 
 .footdiv{
@@ -182,6 +182,47 @@ img {
   height: 50px;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+/* About us */
+.AU-hero{
+  position: relative;
+  height: 400px;
+  background: url(../Images/PNG/AU-hero1.JPG);
+  background-position: 0px -200px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  color: white;
+}
+
+.AU-hero::after{
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right:0; bottom:0;
+  background: rgba(0,0,0,0.5);
+}
+
+.AU-hero-content{
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding:10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.AU-hero-content h1{
+  margin: 10px;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.AU-hero-content p{
+  margin:10px;
+  font-size:20px;
 }
 
 /* ========== Mobile (<=768px) ========== */
