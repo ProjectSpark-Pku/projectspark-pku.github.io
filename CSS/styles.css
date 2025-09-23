@@ -220,9 +220,13 @@ img {
   font-family: serif;
 }
 
-.AU-hero-content p{
-  margin:10px;
-  font-size:20px;
+.Principles{
+  margin: 100px;
+  padding: 35px; 
+}
+
+.Principles-Text-Label{
+
 }
 
 /* ========== Mobile (<=768px) ========== */
