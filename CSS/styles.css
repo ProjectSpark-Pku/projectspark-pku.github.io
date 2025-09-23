@@ -202,7 +202,7 @@ img {
   content: "";
   position: absolute;
   top: 0; left: 0; right:0; bottom:0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.25);
 }
 
 .AU-hero-content{
@@ -220,13 +220,24 @@ img {
   font-family: serif;
 }
 
-.Principles{
-  margin: 100px;
-  padding: 35px; 
+.HeadingTextLink{
+  margin: 75px;
+  padding-left: 35px; 
+  padding-right: 35px;
 }
 
-.Principles-Text-Label{
+.HeadingText-heading{
+  font-size: 42px;
+  font-family: sans-serif;
+  font-weight: 900;
+}
 
+.Waveunderline-wave path{
+  fill: none;
+  stroke: #090040;
+  stroke-width: 0.1;
+  stroke-dasharray: 40.527164459228516 40.527164459228516;
+  stroke-dashoffset: 0;
 }
 
 /* ========== Mobile (<=768px) ========== */
