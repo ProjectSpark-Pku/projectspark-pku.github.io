@@ -1,62 +1,76 @@
 // JavaScript/script.js
-// Load navbar.html and wire hamburger/dropdown behavior.
+// Generic partial loader + navbar behavior
 
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("✅ script.js loaded");
 
-  const candidates = [
+  await loadPartial("#navbar-placeholder", [
     "/Partials/navbar.html",
+    "Partials/navbar.html",
     "../Partials/navbar.html"
-  ];
+  ], "Navbar");
 
-  let navbarHtml = null;
+  await loadPartial("#footer-placeholder", [
+    "/Partials/footer.html",
+    "Partials/footer.html",
+    "../Partials/footer.html"
+  ], "Footer");
+
+  setupNavbarBehavior(); // after navbar injection
+});
+
+/**
+ * Load an HTML partial into a placeholder element.
+ * @param {string} selector - CSS selector for the placeholder
+ * @param {string[]} pathOptions - candidate paths
+ * @param {string} label - label for logging ("Navbar"/"Footer")
+ */
+async function loadPartial(selector, pathOptions, label) {
+  let html = null;
   let fetchedUrl = null;
 
-  for (const path of candidates) {
+  for (const path of pathOptions) {
     try {
       const resolved = new URL(path, window.location.href).href;
-      console.log("Attempting fetch →", resolved);
+      console.log(`[${label}] Attempting fetch →`, resolved);
 
       const res = await fetch(resolved, { cache: "no-store" });
-      console.log("  -> response", res.status, path);
+      console.log(`[${label}]   -> response`, res.status, path);
 
       if (res.ok) {
-        const text = await res.text(); // ✅ only once
-        console.log("Fetched text length:", text.length);
-        console.log("Preview:", text.slice(0, 100));
+        const text = await res.text();
+        console.log(`[${label}] Fetched text length:`, text.length);
+        console.log(`[${label}] Preview:`, text.slice(0, 100));
 
-        if (text.trim().length > 0) {
-          navbarHtml = text;
+        if (text.length > 0) {
+          html = text;
           fetchedUrl = resolved;
           break;
         }
       }
     } catch (err) {
-      console.warn("  fetch error for", path, err?.message);
+      console.warn(`[${label}] fetch error for`, path, err?.message);
     }
   }
 
-  if (!navbarHtml) {
-    console.error("❌ Navbar: failed to load any content. Tried:", candidates);
+  if (!html) {
+    console.error(`❌ ${label}: failed to load any content. Tried:`, pathOptions);
     return;
   }
 
-  console.log("Fetch response status: OK from", fetchedUrl);
-
-  let placeholder = document.querySelector("#navbar-placeholder");
+  const placeholder = document.querySelector(selector);
   if (!placeholder) {
-    placeholder = document.createElement("div");
-    placeholder.id = "navbar-placeholder";
-    document.body.insertBefore(placeholder, document.body.firstChild);
-    console.log("Navbar: created #navbar-placeholder automatically.");
+    console.error(`❌ ${label}: Placeholder ${selector} not found in DOM`);
+    return;
   }
 
-  placeholder.innerHTML = navbarHtml;
-  console.log("✅ Navbar injected into DOM.");
+  placeholder.innerHTML = html;
+  console.log(`✅ ${label} injected into DOM from ${fetchedUrl}`);
+}
 
-  setupNavbarBehavior();
-});
-
+/**
+ * Attach event handlers for hamburger, dropdown, auto-close behavior.
+ */
 function setupNavbarBehavior() {
   const hamburger = document.querySelector(".hamburger");
   const dropdown = document.querySelector(".dropdown-menu");
@@ -77,16 +91,10 @@ function setupNavbarBehavior() {
     ev.stopPropagation();
     if (dropdown) {
       dropdown.classList.toggle("show");
-      hamburger.setAttribute(
-        "aria-expanded",
-        dropdown.classList.contains("show")
-      );
+      hamburger.setAttribute("aria-expanded", dropdown.classList.contains("show"));
     } else if (navLinks) {
       navLinks.classList.toggle("show");
-      hamburger.setAttribute(
-        "aria-expanded",
-        navLinks.classList.contains("show")
-      );
+      hamburger.setAttribute("aria-expanded", navLinks.classList.contains("show"));
     }
   });
 
