@@ -14,10 +14,16 @@ img {
   display: block;
 }
 
+#navbar-placeholder {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 
 /* ========== Navbar ========== */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -169,12 +175,13 @@ img {
   display: flex;
   background:#090040;
   padding: 15px;
-  
+  min-height: 100px;
 }
 
 .footdiv{
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .footdiv img{
