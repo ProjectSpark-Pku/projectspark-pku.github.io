@@ -32,15 +32,15 @@ async function loadPartial(selector, pathOptions, label) {
   for (const path of pathOptions) {
     try {
       const resolved = new URL(path, window.location.href).href;
-      console.log(`[${label}] Attempting fetch →`, resolved);
+      /*console.log(`[${label}] Attempting fetch →`, resolved);*/
 
       const res = await fetch(resolved, { cache: "no-store" });
-      console.log(`[${label}]   -> response`, res.status, path);
+      /*console.log(`[${label}]   -> response`, res.status, path);*/
 
       if (res.ok) {
         const text = await res.text();
-        console.log(`[${label}] Fetched text length:`, text.length);
-        console.log(`[${label}] Preview:`, text.slice(0, 100));
+        /*console.log(`[${label}] Fetched text length:`, text.length);
+        console.log(`[${label}] Preview:`, text.slice(0, 100));*/
 
         if (text.length > 0) {
           html = text;
@@ -65,7 +65,7 @@ async function loadPartial(selector, pathOptions, label) {
   }
 
   placeholder.innerHTML = html;
-  console.log(`✅ ${label} injected into DOM from ${fetchedUrl}`);
+  /*console.log(`✅ ${label} injected into DOM from ${fetchedUrl}`);*/
 }
 
 /**
@@ -98,5 +98,5 @@ function setupNavbarBehavior() {
     }
   });
 
-  console.log("✅ Navbar behavior wired.");
+  /*console.log("✅ Navbar behavior wired.");*/
 }

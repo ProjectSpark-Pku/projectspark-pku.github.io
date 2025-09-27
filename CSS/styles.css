@@ -54,20 +54,37 @@ img {
   gap: 1rem;
 }
 
-/* Links */
 .nav-links {
+  position: relative;   /* so highlight positions relative to this */
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
+.highlight {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2.2rem;
+  background: #2d3d92;
+  border-radius: 6px;
+  z-index: 0; /* behind links */
+  transition: all 0.3s ease;
+}
+
 .nav-links a {
+  position: relative; /* keep text above highlight */
   color: white;
   text-decoration: none;
   font-weight: bold;
   margin: 0 1rem;
+  z-index: 1; /* ensures they stay visible */
   transition: color 0.3s;
 }
+
+
+
 
 .nav-links a:hover {
   color: #ffd95e;
@@ -80,7 +97,7 @@ img {
 
 /* Donate Button (desktop) */
 .btn-donate {
-  margin-left: 1rem;
+  margin-right: 1rem;
   background-color: #090040;
   color: white;
   font-weight: bold;
