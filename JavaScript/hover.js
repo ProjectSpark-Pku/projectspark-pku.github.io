@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("✅ hover.js loaded");
 
   function setupNavHover() {
-    const links = document.querySelectorAll(".nav-links a, .nav-links button");
+    const links = document.querySelectorAll(".nav-links a");
     const highlight = document.querySelector(".highlight");
     const nav = document.querySelector(".nav-links");
 
