@@ -1,0 +1,71 @@
+{
+  "founders": {
+    "": [
+      {
+        "name": "Juan Howard Wijaya",
+        "role": "",
+        "image": "../images/Members/founder1.jpg"
+      },
+      {
+        "name": "Kenan Lowelim Bendiclano",
+        "role": "",
+        "image": "../images/Members/founder2.jpg"
+      },
+      {
+        "name": "Oliver Keith Wijaya",
+        "role": "",
+        "image": "../images/Members/founder3.jpg"
+      },
+      {
+        "name": "Neilson Huang",
+        "role": "",
+        "image": "../images/Members/founder4.jpg"
+      },
+      {
+        "name": "Jordyn Anderson Wu",
+        "role": "",
+        "image": "../images/Members/founder5.jpg"
+      }
+    ]
+  },
+  "2025": {
+    "Main Team": [
+      {
+        "name": "Juan Howard Wijaya",
+        "role": "Leader",
+        "image": "../images/Members/founder1.jpg"
+      },
+      {
+        "name": "Kenan Lowelim Bendiclano",
+        "role": "Vice Leader",
+        "image": "../images/Members/founder2.jpg"
+      },
+      {
+        "name": "Gessy Sandra",
+        "role": "1st Secretary",
+        "image": "../images/Members/founder5.jpg"
+      },
+      {
+        "name": "Queensyla Valerie Hansen",
+        "role": "2nd Secretary",
+        "image": "../images/Members/founder6.jpg"
+      },
+      {
+        "name": "Oliver Keith Wijaya",
+        "role": "1st Treasurer",
+        "image": "../images/Members/founder3.jpg"
+      },
+      {
+        "name": "Neilson Huang",
+        "role": "2nd Lady",
+        "image": "../images/Members/founder4.jpg"
+      }
+    ]
+  },
+  "2026": {
+    "Strategy": [
+      {
+      }
+    ]
+  }
+}

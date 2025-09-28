@@ -83,9 +83,6 @@ img {
   transition: color 0.3s;
 }
 
-
-
-
 .nav-links a:hover {
   color: #ffd95e;
 }
@@ -128,6 +125,16 @@ img {
 .dropdown-menu {
     display: none;
 }
+
+
+.member-card img {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;   /* keeps it square */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 
 
 /* ========== Hero Section ========== */
