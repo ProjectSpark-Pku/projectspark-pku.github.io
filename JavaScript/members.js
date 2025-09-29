@@ -1,4 +1,5 @@
-console.log("MEMBERS JS LOADED")
+console.log("MEMBERS JS LOADED");
+
 async function loadMembers() {
   const res = await fetch("../data/members.json"); // adjust path if needed
   const data = await res.json();
@@ -21,21 +22,37 @@ async function loadMembers() {
 
       // Divisions
       Object.keys(data[y]).forEach(division => {
+        const members = data[y][division].filter(m => m.name); // skip empty objects
+
+        if (members.length === 0) return; // skip empty divisions
+
         const divTitle = document.createElement("h3");
-        divTitle.textContent = division;
+        if (division.trim() !== "") divTitle.textContent = division;
         yearGroup.appendChild(divTitle);
 
         const grid = document.createElement("div");
         grid.className = "member-grid";
 
-        data[y][division].forEach(member => {
+        members.forEach(member => {
           const card = document.createElement("div");
           card.className = "member-card";
 
+          const role = member.role ? member.role.toLowerCase() : "";
+
+          if (role.includes("vice leader")) {
+            card.classList.add("vice-leader");
+          } else if (role.includes("leader")) {
+            card.classList.add("leader");
+          } else if (role.includes("head")) {
+            card.classList.add("leader");
+          }
+          
           card.innerHTML = `
-            <img src="${member.image}" alt="${member.name}">
-            <h4>${member.name}</h4>
-            <p>${member.role}</p>
+            <div class="card-inner">
+              <img src="${member.image || "/Images/placeholder.jpg"}" alt="${member.name}">
+              <h4>${member.name}</h4>
+              ${member.role ? `<p>${member.role}</p>` : ""}
+            </div>
           `;
 
           grid.appendChild(card);
@@ -58,4 +75,3 @@ async function loadMembers() {
 }
 
 loadMembers();
-

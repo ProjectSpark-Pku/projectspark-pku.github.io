@@ -4,22 +4,22 @@
       {
         "name": "Juan Howard Wijaya",
         "role": "",
-        "image": "/Images/Members/founder1.jpg"
+        "image": "/Images/Members/juan1.jpg"
       },
       {
         "name": "Kenan Lowelim Bendiclano",
         "role": "",
-        "image": "/Images/Members/founder2.jpg"
+        "image": "/Images/Members/kenan1.jpg"
       },
       {
         "name": "Oliver Keith Wijaya",
         "role": "",
-        "image": "/Images/Members/founder3.jpg"
+        "image": "/Images/Members/oliver1.jpg"
       },
       {
         "name": "Neilson Huang",
         "role": "",
-        "image": "/Images/Members/founder4.jpg"
+        "image": "/Images/Members/neilson1.jpg"
       },
       {
         "name": "Jordyn Anderson Wu",
@@ -33,32 +33,116 @@
       {
         "name": "Juan Howard Wijaya",
         "role": "Leader",
-        "image": "/Images/Members/founder1.jpg"
+        "image": "/Images/Members/juan1.jpg"
       },
       {
         "name": "Kenan Lowelim Bendiclano",
         "role": "Vice Leader",
-        "image": "/Images/Members/founder2.jpg"
+        "image": "/Images/Members/kenan1.jpg"
       },
       {
         "name": "Gessy Sandra",
         "role": "1st Secretary",
-        "image": "/Images/Members/founder5.jpg"
+        "image": "/Images/Members/gessy1.jpg"
       },
       {
         "name": "Queensyla Valerie Hansen",
         "role": "2nd Secretary",
-        "image": "/Images/Members/founder6.jpg"
+        "image": "/Images/Members/queensyla1.jpg"
       },
       {
         "name": "Oliver Keith Wijaya",
         "role": "1st Treasurer",
-        "image": "/Images/Members/founder3.jpg"
+        "image": "/Images/Members/oliver1.jpg"
       },
       {
         "name": "Neilson Huang",
         "role": "2nd Lady",
-        "image": "/Images/Members/founder4.jpg"
+        "image": "/Images/Members/neilson1.jpg"
+      }
+    ],
+    "Media & Public Relations": [
+      {
+        "name": "Jordyn Anderson Wu",
+        "role": "Head of Media & Public Relations",
+        "image": "/Images/Members/jordyn1.jpg"
+      },
+      {
+        "name": "Clarissa Wu",
+        "role": "Member",
+        "image": "/Images/Members/clarissa1.jpg"
+      },
+      {
+        "name": "Audrey Keira Chan",
+        "role": "Member",
+        "image": "/Images/Members/audreykc1.jpg"
+      },
+      {
+        "name": "Angelina Lisvia",
+        "role": "Member",
+        "image": "/Images/Members/lisvia1.jpg"
+      },
+      {
+        "name": "Sherin Tjaya Indera",
+        "role": "Member",
+        "image": "/Images/Members/sherin1.jpg"
+      },
+      {
+        "name": "Audrey Olivia",
+        "role": "Member",
+        "image": "/Images/Members/audreyo1.jpg"
+      },
+      {
+        "name": "Natalie (full name)",
+        "role": "Member",
+        "image": "/Images/Members/natalie1.jpg"
+      }
+    ],
+    "Logistics & Operations": [
+      {
+        "name": "Jason Wirio",
+        "role": "Head of Logistics & Operations",
+        "image": "/Images/Members/jason1.jpg"
+      },
+      {
+        "name": "Verrel Miguel Wijaya",
+        "role": "Member",
+        "image": "/Images/Members/verrel1.jpg"
+      },
+      {
+        "name": "Joey Richard Sahala Sianipar",
+        "role": "Member",
+        "image": "/Images/Members/joey1.jpg"
+      },
+      {
+        "name": "Fan Helsen",
+        "role": "Member",
+        "image": "/Images/Members/fan1.jpg"
+      },
+      {
+        "name": "Louis Garry",
+        "role": "Member",
+        "image": "/Images/Members/louis1.jpg"
+      },
+      {
+        "name": "Christian Marcelino Delamora",
+        "role": "Member",
+        "image": "/Images/Members/christian1.jpg"
+      },
+      {
+        "name": "Suyankiadi",
+        "role": "Member",
+        "image": "/Images/Members/suyankiadi1.jpg"
+      },
+      {
+        "name": "Travis Tandrew",
+        "role": "Member",
+        "image": "/Images/Members/travis1.jpg"
+      },
+      {
+        "name": "Edward Pangestu",
+        "role": "Member",
+        "image": "/Images/Members/edward1.jpg"
       }
     ]
   },
