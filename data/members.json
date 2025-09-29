@@ -93,7 +93,7 @@
         "image": "/Images/Members/audreyo1.jpg"
       },
       {
-        "name": "Natalie (full name)",
+        "name": "Natalie Angeline Gunawan",
         "role": "Member",
         "image": "/Images/Members/natalie1.jpg"
       }
@@ -144,8 +144,38 @@
         "role": "Member",
         "image": "/Images/Members/edward1.jpg"
       }
+    ],
+    "Documentation": [
+      {
+        "name": "Jonathan Huang",
+        "role": "Head of Documentation",
+        "image": "/Images/Members/jonathan1.jpg"
+      },
+      {
+        "name": "Nico Ezekiel",
+        "role": "Member",
+        "image": "/Images/Members/nico1.jpg"
+      },
+      {
+        "name": "Naura Nadine",
+        "role": "Member",
+        "image": "/Images/Members/naura1.jpg"
+      }
+    ],
+    "Technical": [
+      {
+        "name": "Steven Teguh Kandiawan",
+        "role": "Head of Technical",
+        "image": "/Images/Members/steven1.jpg"
+      },
+      {
+        "name": "Freddy Limothie",
+        "role": "Member",
+        "image": "/Images/Members/freddy1.jpg"
+      }
     ]
   },
+
   "2026": {
     "Strategy": [
       {

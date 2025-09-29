@@ -46,7 +46,7 @@ async function loadMembers() {
           } else if (role.includes("head")) {
             card.classList.add("leader");
           }
-          
+
           card.innerHTML = `
             <div class="card-inner">
               <img src="${member.image || "/Images/placeholder.jpg"}" alt="${member.name}">
@@ -66,7 +66,7 @@ async function loadMembers() {
   }
 
   // Default: show all
-  render("all");
+  render("2025");
 
   // Filter buttons
   document.querySelectorAll(".year-filter button").forEach(btn => {

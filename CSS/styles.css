@@ -5,7 +5,10 @@ body {
 }
 
 html, body {
-
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -262,6 +265,96 @@ img {
 
 /* ========== Members ========== */
 
+/* ===== Page Layout ===== */
+.members-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9fb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+main {
+  flex: 1;
+}
+
+main.members {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ===== Page Title ===== */
+main.members h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #090040;
+}
+
+/* ===== Year Filter Buttons ===== */
+.year-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.year-filter button {
+  background: #fff;
+  border: 2px solid #090040;
+  color: #090040;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.year-filter button:hover {
+  background: #090040;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.year-filter button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* ===== Year Group Section ===== */
+.year-group {
+  margin-bottom: 4rem;
+}
+
+.year-group h2 {
+  font-size: 2rem;
+  color: #090040;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.year-group h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ===== Footer / Navbar placeholders ===== */
+#navbar-placeholder,
+#footer-placeholder {
+  width: 100%;
+}
+
+
 .member-card img {
   width: 100%;
   max-width: 150px;
@@ -351,7 +444,7 @@ img {
   text-align: center;
   justify-items: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  max-width: 250px;        /* control size */
+  max-width: 200px;        /* control size */
   width: 100%;
 }
 
