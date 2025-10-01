@@ -1,0 +1,143 @@
+/* ========== Members Page ========== */
+.members-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+main.members {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Page Title */
+main.members h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #090040;
+}
+
+/* Year Filter */
+.year-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.year-filter button {
+  background: #fff;
+  border: 2px solid #090040;
+  color: #090040;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.year-filter button:hover {
+  background: #090040;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.year-filter button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Year Group */
+.year-group {
+  margin-bottom: 3rem;
+}
+
+.year-group h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #090040;
+}
+
+.year-group h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Member Grid */
+.member-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Member Card */
+.member-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  flex: 0 1 180px;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+}
+
+.member-card h4 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.member-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Leaders / Vice Leaders */
+.member-card.leader,
+.member-card.vice-leader {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.member-card.leader .card-inner,
+.member-card.vice-leader .card-inner {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  justify-items: center;
+  max-width: 200px;
+  width: 100%;
+}
