@@ -81,25 +81,38 @@ main.members h1 {
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
-  text-align: center;
 }
 
-/* Member Card */
+/* Member Card (outer wrapper) */
 .member-card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
   flex: 0 1 180px;
+  display: flex;
+  justify-content: center; /* center inner */
+  transition: transform 0.2s ease;
 }
 
 .member-card:hover {
   transform: translateY(-5px);
 }
 
-.member-card img {
+/* Shared inner structure (all members use this) */
+.card-inner {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.3);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  flex-shrink: 0;
+  width: 180px;
+}
+
+/* Member Image */
+.card-inner img {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -107,13 +120,14 @@ main.members h1 {
   margin-bottom: 0.75rem;
 }
 
-.member-card h4 {
+/* Member Text */
+.card-inner h4 {
   margin: 0.5rem 0;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-.member-card p {
+.card-inner p {
   margin: 0;
   font-size: 0.9rem;
   color: #555;
@@ -123,21 +137,10 @@ main.members h1 {
 .member-card.leader,
 .member-card.vice-leader {
   flex: 0 0 100%;
-  display: flex;
   justify-content: center;
-  background: none;
-  box-shadow: none;
-  padding: 0;
 }
 
 .member-card.leader .card-inner,
 .member-card.vice-leader .card-inner {
-  background: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  justify-items: center;
-  max-width: 200px;
-  width: 100%;
+  max-width: 180px; /* keeps consistent size */
 }

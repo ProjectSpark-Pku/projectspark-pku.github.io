@@ -53,3 +53,26 @@
   background: black;
   color: white;
 }
+
+@media (max-width: 768px) {
+  /* Hero stacks */
+  .hero {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .hero-image,
+  .hero-text {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-image img {
+    max-height: 300px;
+  }
+}
