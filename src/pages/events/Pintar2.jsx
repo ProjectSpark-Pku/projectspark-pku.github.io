@@ -12,7 +12,7 @@ function Pintar2() {
             <div className="HeadingStatementText-Contents">
               <div className="HeadingStatementText-Heading">
                 <div>A New Place. The Same Spark.</div>
-                <img src="/Images/Events/event5.png" alt="Pintar 2" className="hero-event-img" />
+                <img src="/projectspark-pku/Images/Events/event5.png" alt="Pintar 2" className="hero-event-img" />
               </div>
               <div className="Content-right">
                 <div className="HeadingStatementText-Statement">
@@ -45,7 +45,7 @@ function Pintar2() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/Images/Icons/Events/Pintar 2/Chemistry.png" alt="Chemistry" />
+                <img src="/projectspark-pku/Images/Icons/Events/Pintar 2/Chemistry.png" alt="Chemistry" />
               </div>
               <div className="item-heading">Chemistry</div>
               <div className="item-text">
@@ -55,7 +55,7 @@ function Pintar2() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/Images/Icons/Events/Pintar 2/Art.png" alt="Art" />
+                <img src="/projectspark-pku/Images/Icons/Events/Pintar 2/Art.png" alt="Art" />
               </div>
               <div className="item-heading">Art</div>
               <div className="item-text">
@@ -65,7 +65,7 @@ function Pintar2() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/Images/Icons/Events/Pintar 2/Physics.png" alt="Physics" />
+                <img src="/projectspark-pku/Images/Icons/Events/Pintar 2/Physics.png" alt="Physics" />
               </div>
               <div className="item-heading">Physics</div>
               <div className="item-text">
@@ -75,7 +75,7 @@ function Pintar2() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/Images/Icons/Events/Pintar 2/Math.png" alt="Math" />
+                <img src="/projectspark-pku/Images/Icons/Events/Pintar 2/Math.png" alt="Math" />
               </div>
               <div className="item-heading">Math</div>
               <div className="item-text">

@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react' // (or whatever plugins you have)
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Use relative paths for better portability
+  base: '/projectspark-pku/', // 👈IMPORTANT
 })

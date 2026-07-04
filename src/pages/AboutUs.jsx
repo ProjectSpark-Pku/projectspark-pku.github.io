@@ -96,21 +96,21 @@ function AboutUs() {
           <div className="AU-values-grid">
             <div className="AU-value-card">
               <div className="AU-value-icon">
-                <img src="/Images/PNG/school.png" alt="Educate" />
+                <img src="/projectspark-pku/Images/PNG/school.png" alt="Educate" />
               </div>
               <h3 className="AU-value-title">Educate</h3>
               <p className="AU-value-desc">We share knowledge that inspires curiosity, growth, and awareness — helping children unlock their potential to build a brighter future.</p>
             </div>
             <div className="AU-value-card">
               <div className="AU-value-icon">
-                <img src="/Images/PNG/empowerment.png" alt="Empower" />
+                <img src="/projectspark-pku/Images/PNG/empowerment.png" alt="Empower" />
               </div>
               <h3 className="AU-value-title">Empower</h3>
               <p className="AU-value-desc">We encourage individuals and communities to take action with confidence, turning compassion and creativity into real, sustainable change.</p>
             </div>
             <div className="AU-value-card">
               <div className="AU-value-icon">
-                <img src="/Images/PNG/transform.png" alt="Transform" />
+                <img src="/projectspark-pku/Images/PNG/transform.png" alt="Transform" />
               </div>
               <h3 className="AU-value-title">Transform</h3>
               <p className="AU-value-desc">We believe every spark of effort can reshape lives and communities — creating lasting impact through collaboration, kindness, and innovation.</p>

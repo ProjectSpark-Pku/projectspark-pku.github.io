@@ -12,7 +12,7 @@ function StellaBazaar() {
             <div className="HeadingStatementText-Contents">
               <div className="HeadingStatementText-Heading">
                 <div>Where Every Bite Made a Difference</div>
-                <img src="/Images/Events/event3.png" alt="Stella Bazaar" className="hero-event-img" />
+                <img src="/projectspark-pku/Images/Events/event3.png" alt="Stella Bazaar" className="hero-event-img" />
               </div>
               <div className="Content-right">
                 <div className="HeadingStatementText-Statement">
@@ -45,7 +45,7 @@ function StellaBazaar() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/Images/Icons/Events/Stella Bazaar/food.png" alt="Food Stall" />
+                <img src="/projectspark-pku/Images/Icons/Events/Stella Bazaar/food.png" alt="Food Stall" />
               </div>
               <div className="item-heading">The Food Stall</div>
               <div className="item-text">
@@ -55,7 +55,7 @@ function StellaBazaar() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/Images/Icons/Events/Stella Bazaar/community.png" alt="Community" />
+                <img src="/projectspark-pku/Images/Icons/Events/Stella Bazaar/community.png" alt="Community" />
               </div>
               <div className="item-heading">Community First</div>
               <div className="item-text">
@@ -65,7 +65,7 @@ function StellaBazaar() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/Images/Icons/Events/Stella Bazaar/mission.png" alt="Mission" />
+                <img src="/projectspark-pku/Images/Icons/Events/Stella Bazaar/mission.png" alt="Mission" />
               </div>
               <div className="item-heading">Driven by Purpose</div>
               <div className="item-text">
@@ -75,7 +75,7 @@ function StellaBazaar() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/Images/Icons/Events/Stella Bazaar/start.png" alt="First Step" />
+                <img src="/projectspark-pku/Images/Icons/Events/Stella Bazaar/start.png" alt="First Step" />
               </div>
               <div className="item-heading">The First Spark</div>
               <div className="item-text">

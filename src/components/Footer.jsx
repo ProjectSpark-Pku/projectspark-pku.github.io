@@ -5,10 +5,10 @@ function Footer() {
     <nav className="footer">
       <div className="footdiv">
         <a href="https://www.instagram.com/projectspark.pku/">
-          <img src="/Images/PNG/Instagram Logo.png" alt="Instagram" />
+          <img src="/projectspark-pku/Images/PNG/Instagram Logo.png" alt="Instagram" />
         </a>
         <a href="https://www.tiktok.com/@projectspark.pku">
-          <img src="/Images/PNG/Tiktok Logo.png" alt="TikTok" />
+          <img src="/projectspark-pku/Images/PNG/Tiktok Logo.png" alt="TikTok" />
         </a>
       </div>
       <div>

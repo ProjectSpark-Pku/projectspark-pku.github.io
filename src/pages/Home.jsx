@@ -7,7 +7,7 @@ function Home() {
       <section className="hero">
         <div className="hero-image">
           {/* Points directly to your public folder layout seamlessly! */}
-          <img src="/Images/PNG/Hero photo.png" alt="Project Spark Hero" />
+          <img src="/projectspark-pku/Images/PNG/Hero photo.png" alt="Project Spark Hero" />
         </div>
         <div className="hero-text">
           <h2>

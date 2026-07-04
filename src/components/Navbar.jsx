@@ -45,7 +45,7 @@ function Navbar() {
       <header className="navbar">
         <div className="logo">
           <Link to="/">
-            <img src="/Images/SVG/project_spark_logo.svg" alt="Project Spark Logo" />
+            <img src="/projectspark-pku/Images/SVG/project_spark_logo.svg" alt="Project Spark Logo" />
           </Link>
         </div>
 
