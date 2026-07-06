@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function AboutUs() {
   return (
@@ -127,8 +128,8 @@ function AboutUs() {
             Whether you volunteer, donate, or simply share what we do — you become part of something that outlasts any single event. The children we work with will remember the people who showed up. Be one of them.
           </p>
           <div className="AU-cta-buttons">
-            <a href="/our-work" className="AU-btn AU-btn--primary">See Our Work →</a>
-            <a href="/members" className="AU-btn AU-btn--secondary">Meet the Team →</a>
+            <Link to="/our-work" className="AU-btn AU-btn--primary">See Our Work →</Link>
+            <Link to="/members" className="AU-btn AU-btn--secondary">Meet the Team →</Link>
           </div>
         </div>
       </section>
