@@ -6,6 +6,7 @@ import OurWork from './pages/OurWork';
 import Impact from './pages/Impact';
 import Transparency from './pages/Transparency';
 import Members from './pages/Members';
+import Login from './pages/Login';
 
 import Pintar1 from './pages/events/Pintar1';
 import Pintar2 from './pages/events/Pintar2';
@@ -26,6 +27,7 @@ import './CSS/about_us.css';
 import './CSS/our_work.css';
 import './CSS/members.css';
 import './CSS/event_template.css';
+import './CSS/login.css';
 
 function App() {
   return (
@@ -38,6 +40,7 @@ function App() {
         <Route path="/impact" element={<Impact />} />
         <Route path="/transparency" element={<Transparency />} />
         <Route path="/members" element={<Members />} />
+        <Route path="/login" element={<Login />} />
 
         {/* Event Routes */}
         <Route path="/events/pintar-1" element={<Pintar1 />} />

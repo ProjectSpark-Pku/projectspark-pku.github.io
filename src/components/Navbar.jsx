@@ -70,12 +70,14 @@ function Navbar() {
           </nav>
           
           <button
-            className="hamburger"
+            className={`hamburger ${isMenuOpen ? 'open' : ''}`}
             onClick={toggleMenu}
             aria-expanded={isMenuOpen}
             aria-label="Toggle navigation menu"
           >
-            &#9776;
+            <span className="hamburger-line line-1"></span>
+            <span className="hamburger-line line-2"></span>
+            <span className="hamburger-line line-3"></span>
           </button>
         </div>
       </header>
