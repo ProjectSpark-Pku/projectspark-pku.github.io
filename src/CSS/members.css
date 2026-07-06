@@ -150,12 +150,12 @@ main.members h1 {
     gap: 0.75rem;
   }
   .member-card {
-    flex: 0 1 calc(50% - 0.75rem);
+    flex: 0 1 calc(40% - 0.75rem);
     justify-content: center;
   }
 
   .card-inner {
-    width: 170px;
+    width: 140px;
     padding: 0.75rem;
     margin: 0 auto;
   }
