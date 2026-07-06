@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -16,7 +17,7 @@ function Home() {
           <p>
             We aim to empower students and communities to use innovation for solving real-world problems.
           </p>
-          <a href="/about" className="btn-about">About Us →</a>
+          <Link to="/about" className="btn-about">About Us →</Link>
         </div>
       </section>
 
@@ -67,8 +68,8 @@ function Home() {
             Every contribution, big or small, helps us bring more programs, more learning, and more hope to children across Pekanbaru.
           </p>
           <div className="cta-buttons">
-            <a href="/donate" className="cta-btn">Donate →</a>
-            <a href="/work" className="cta-btn">See Our Work →</a>
+            <Link to="/about" className="cta-btn">Donate →</Link>
+            <Link to="/our-work" className="cta-btn">See Our Work →</Link>
           </div>
         </div>
       </section>

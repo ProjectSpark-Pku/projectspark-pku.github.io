@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   const navRef = useRef(null);
   const highlightRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const nav = navRef.current;
@@ -40,6 +41,14 @@ function Navbar() {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(prev => !prev);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <header className="navbar">
@@ -60,16 +69,23 @@ function Navbar() {
             <button className="btn-donate">Donate</button>
           </nav>
           
-          <button className="hamburger">&#9776;</button>
+          <button
+            className="hamburger"
+            onClick={toggleMenu}
+            aria-expanded={isMenuOpen}
+            aria-label="Toggle navigation menu"
+          >
+            &#9776;
+          </button>
         </div>
       </header>
 
-      <div className="dropdown-menu">
-        <Link to="/about">About</Link>
-        <Link to="/our-work">Our Work</Link>
-        <Link to="/impact">Impact</Link>
-        <Link to="/transparency">Transparency</Link>
-        <Link to="/members">Members</Link>
+      <div className={`dropdown-menu ${isMenuOpen ? 'show' : ''}`}>
+        <Link to="/about" onClick={closeMenu}>About</Link>
+        <Link to="/our-work" onClick={closeMenu}>Our Work</Link>
+        <Link to="/impact" onClick={closeMenu}>Impact</Link>
+        <Link to="/transparency" onClick={closeMenu}>Transparency</Link>
+        <Link to="/members" onClick={closeMenu}>Members</Link>
 
         <div className="menu-actions">
           <button className="btn-donate">Donate</button>
