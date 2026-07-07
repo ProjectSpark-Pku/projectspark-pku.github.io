@@ -1,15 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { supabase } from '../supabaseClient';
 
-function Navbar() {
+function Navbar({ session }) {
   const navRef = useRef(null);
   const highlightRef = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const logout = async () => {
+    await supabase.auth.signOut();
+  };
+
   useEffect(() => {
     const nav = navRef.current;
     const highlight = highlightRef.current;
-    
+
     if (!nav || !highlight) return;
 
     const links = nav.querySelectorAll('a');
@@ -41,6 +46,14 @@ function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    document.body.classList.toggle('menu-open', isMenuOpen);
+
+    return () => {
+      document.body.classList.remove('menu-open');
+    };
+  }, [isMenuOpen]);
+
   const toggleMenu = () => {
     setIsMenuOpen(prev => !prev);
   };
@@ -58,17 +71,29 @@ function Navbar() {
           </Link>
         </div>
 
-        <div className="nav-right">
-          <nav className="nav-links" ref={navRef}>
-            <div className="highlight" ref={highlightRef}></div>
-            <Link to="/about">About Us</Link>
-            <Link to="/our-work">Our Work</Link>
-            <Link to="/impact">Impact</Link>
-            <Link to="/transparency">Transparency</Link>
-            <Link to="/members">Members</Link>
-            <button className="btn-donate">Donate</button>
-          </nav>
-          
+        <nav className="nav-links" ref={navRef}>
+          <div className="highlight" ref={highlightRef}></div>
+          <Link to="/about">About Us</Link>
+          <Link to="/our-work">Our Work</Link>
+          <Link to="/impact">Impact</Link>
+          <Link to="/transparency">Transparency</Link>
+          <Link to="/members">Members</Link>
+        </nav>
+
+        <div className="nav-actions">
+          {session ? (
+            <button type="button" className="btn-auth btn-login" onClick={logout}>Logout</button>
+          ) : (
+            <>
+              <Link to="/login" className="btn-auth btn-login">Login</Link>
+              <Link to="/signup" className="btn-auth btn-signup">Sign Up</Link>
+            </>
+          )}
+          <button type="button" className="btn-donate">Donate</button>
+        </div>
+
+        <div className="mobile-actions">
+          <button type="button" className="btn-donate mobile-donate">Donate</button>
           <button
             className={`hamburger ${isMenuOpen ? 'open' : ''}`}
             onClick={toggleMenu}
@@ -90,7 +115,14 @@ function Navbar() {
         <Link to="/members" onClick={closeMenu}>Members</Link>
 
         <div className="menu-actions">
-          <button className="btn-donate">Donate</button>
+          {session ? (
+            <button type="button" className="btn-auth btn-login" onClick={logout}>Logout</button>
+          ) : (
+            <>
+              <Link to="/login" className="btn-auth btn-login" onClick={closeMenu}>Login</Link>
+              <Link to="/signup" className="btn-auth btn-signup" onClick={closeMenu}>Sign Up</Link>
+            </>
+          )}
         </div>
       </div>
     </>

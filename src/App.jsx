@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -6,7 +6,7 @@ import OurWork from './pages/OurWork';
 import Impact from './pages/Impact';
 import Transparency from './pages/Transparency';
 import Members from './pages/Members';
-import Login from './pages/Login';
+import Auth from './pages/Auth';
 
 import Pintar1 from './pages/events/Pintar1';
 import Pintar2 from './pages/events/Pintar2';
@@ -17,6 +17,7 @@ import Grow1 from './pages/events/Grow1';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { supabase } from './supabaseClient';
 
 // Global Stylesheets (App.jsx uses ./CSS because it sits in the src folder)
 import './CSS/main.css';
@@ -27,12 +28,30 @@ import './CSS/about_us.css';
 import './CSS/our_work.css';
 import './CSS/members.css';
 import './CSS/event_template.css';
-import './CSS/login.css';
+import './CSS/auth.css';
 
 function App() {
+  const [session, setSession] = useState(null);
+
+  useEffect(() => {
+    const fetchSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      setSession(session);
+    };
+    fetchSession();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        setSession(session);
+      }
+    );
+
+    return () => subscription.unsubscribe();
+  }, []);
+
   return (
     <Router>
-      <Navbar />
+      <Navbar session={session} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
@@ -40,7 +59,8 @@ function App() {
         <Route path="/impact" element={<Impact />} />
         <Route path="/transparency" element={<Transparency />} />
         <Route path="/members" element={<Members />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Auth />} />
+        <Route path="/signup" element={<Auth isSignUp />} />
 
         {/* Event Routes */}
         <Route path="/events/pintar-1" element={<Pintar1 />} />
