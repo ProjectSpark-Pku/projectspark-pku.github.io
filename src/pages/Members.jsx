@@ -69,6 +69,22 @@ function Members() {
             
             {Object.keys(membersData[y] || {}).map(division => {
               const members = (membersData[y][division] || []).filter(m => m.name);
+              
+              // Sort members by role hierarchy
+              members.sort((a, b) => {
+                const roleA = a.role ? a.role.toLowerCase() : '';
+                const roleB = b.role ? b.role.toLowerCase() : '';
+                
+                const getRank = (role) => {
+                  if (role.includes('leader') || role.includes('head') || role.includes('president')) return 1;
+                  if (role.includes('vice')) return 2;
+                  if (role.includes('coordinator') || role.includes('manager')) return 3;
+                  return 4; // Member or other
+                };
+                
+                return getRank(roleA) - getRank(roleB);
+              });
+
               if (members.length === 0) return null;
 
               return (
@@ -80,7 +96,7 @@ function Members() {
                       let cardClass = 'member-card';
                       if (roleLower.includes('vice leader')) {
                         cardClass += ' vice-leader';
-                      } else if (roleLower.includes('leader') || roleLower.includes('head')) {
+                      } else if (roleLower.includes('leader') || roleLower.includes('head') || roleLower.includes('coordinator')) {
                         cardClass += ' leader';
                       }
 

@@ -12,7 +12,7 @@ function Pintar2() {
             <div className="HeadingStatementText-Contents">
               <div className="HeadingStatementText-Heading">
                 <div>A New Place. The Same Spark.</div>
-                <img src="/projectspark-pku/Images/Events/event5.png" alt="Pintar 2" className="hero-event-img" />
+                <img src="/projectspark-pku/Images/Events/pintar2_hero.HEIC" alt="Pintar 2" className="hero-event-img" />
               </div>
               <div className="Content-right">
                 <div className="HeadingStatementText-Statement">

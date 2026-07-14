@@ -14,7 +14,7 @@ function Pintar1() {
             <div className="HeadingStatementText-Contents">
               <div className="HeadingStatementText-Heading">
                 <div>Learning That Lights The Way</div>
-                <img src="/projectspark-pku/Images/Events/event2.png" alt="Pintar 1" className="hero-event-img" />
+                <img src="/projectspark-pku/Images/Events/pintar1_hero.JPG" alt="Pintar 1" className="hero-event-img" />
               </div>
               <div className="Content-right">
                 <div className="HeadingStatementText-Statement">

@@ -12,7 +12,7 @@ function StellaBazaar() {
             <div className="HeadingStatementText-Contents">
               <div className="HeadingStatementText-Heading">
                 <div>Where Every Bite Made a Difference</div>
-                <img src="/projectspark-pku/Images/Events/event3.png" alt="Stella Bazaar" className="hero-event-img" />
+                <img src="/projectspark-pku/Images/Events/stella_hero.JPG" alt="Stella Bazaar" className="hero-event-img" />
               </div>
               <div className="Content-right">
                 <div className="HeadingStatementText-Statement">

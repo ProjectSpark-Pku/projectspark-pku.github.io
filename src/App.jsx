@@ -14,7 +14,10 @@ import StellaBazaar from './pages/events/StellaBazaar';
 import CommunityCleanUp from './pages/events/CommunityCleanUp';
 import Shine1 from './pages/events/Shine1';
 import Grow1 from './pages/events/Grow1';
-
+import Pintar3 from './pages/events/Pintar3';
+import CulturalKoreaExchange from './pages/events/CulturalKoreaExchange';
+import Grow2 from './pages/events/Grow2';
+import Pintar4 from './pages/events/Pintar4';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { supabase } from './supabaseClient';
@@ -69,6 +72,10 @@ function App() {
         <Route path="/events/community-clean-up" element={<CommunityCleanUp />} />
         <Route path="/events/shine-1" element={<Shine1 />} />
         <Route path="/events/grow-1" element={<Grow1 />} />
+        <Route path="/events/pintar-3" element={<Pintar3 />} />
+        <Route path="/events/cultural-korea-exchange" element={<CulturalKoreaExchange />} />
+        <Route path="/events/grow-2" element={<Grow2 />} />
+        <Route path="/events/pintar-4" element={<Pintar4 />} />
       </Routes>
       <Footer />
     </Router>

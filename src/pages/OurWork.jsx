@@ -14,7 +14,6 @@ function OurWork() {
               <p className="event-date">21 February 2025</p>
               <h3 className="event-title">Founding of the Organization</h3>
               <img src="/projectspark-pku/Images/Events/event1.png" alt="Founding" className="event-image" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel dui non justo finibus viverra.</p>
             </div>
             <div className="timeline-dot"></div>
           </div>
@@ -24,8 +23,7 @@ function OurWork() {
               <div className="timeline-content">
                 <p className="event-date">28 March 2025</p>
                 <h3 className="event-title">PINTAR 1</h3>
-                <img src="/projectspark-pku/Images/Events/event2.png" alt="PINTAR 1" className="event-image" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.</p>
+                <img src="/projectspark-pku/Images/Events/pintar1_cover.jpeg" alt="PINTAR 1" className="event-image" />
               </div>
             </Link>
             <div className="timeline-dot"></div>
@@ -36,8 +34,7 @@ function OurWork() {
               <div className="timeline-content">
                 <p className="event-date">12 April 2025</p>
                 <h3 className="event-title">STELLA BAZAAR</h3>
-                <img src="/projectspark-pku/Images/Events/event3.png" alt="Stella Bazaar" className="event-image" />
-                <p>Donec sed eros in lectus egestas facilisis. Integer convallis.</p>
+                <img src="/projectspark-pku/Images/Events/stella_cover.JPG" alt="Stella Bazaar" className="event-image" />
               </div>
             </Link>
             <div className="timeline-dot"></div>
@@ -48,8 +45,7 @@ function OurWork() {
               <div className="timeline-content">
                 <p className="event-date">18 May 2025</p>
                 <h3 className="event-title">COMMUNITY CLEAN-UP</h3>
-                <img src="/projectspark-pku/Images/Events/event4.png" alt="Clean-up" className="event-image" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.</p>
+                <img src="/projectspark-pku/Images/Events/cleanup_cover.jpg" alt="Clean-up" className="event-image" />
               </div>
             </Link>
             <div className="timeline-dot"></div>
@@ -60,8 +56,7 @@ function OurWork() {
               <div className="timeline-content">
                 <p className="event-date">22 June 2025</p>
                 <h3 className="event-title">PINTAR 2</h3>
-                <img src="/projectspark-pku/Images/Events/event5.png" alt="PINTAR 2" className="event-image" />
-                <p>Fusce quis libero sit amet justo sodales posuere.</p>
+                <img src="/projectspark-pku/Images/Events/pintar2_cover.jpg" alt="PINTAR 2" className="event-image" />
               </div>
             </Link>
             <div className="timeline-dot"></div>
@@ -72,8 +67,7 @@ function OurWork() {
               <div className="timeline-content">
                 <p className="event-date">24 August 2025</p>
                 <h3 className="event-title">SHINE 1</h3>
-                <img src="/projectspark-pku/Images/Events/event6.png" alt="SHINE 1" className="event-image" />
-                <p>Aliquam erat volutpat.</p>
+                <img src="/projectspark-pku/Images/Events/shine1_cover.jpg" alt="SHINE 1" className="event-image" />
               </div>
             </Link>
             <div className="timeline-dot"></div>
@@ -84,8 +78,52 @@ function OurWork() {
               <div className="timeline-content">
                 <p className="event-date">4 October 2025</p>
                 <h3 className="event-title">GROW 1</h3>
-                <img src="/projectspark-pku/Images/Events/event7.png" alt="GROW 1" className="event-image" />
-                <p>Nullam vel neque at quam tincidunt vulputate.</p>
+                <img src="/projectspark-pku/Images/Events/grow1_cover.jpg" alt="GROW 1" className="event-image" />
+              </div>
+            </Link>
+            <div className="timeline-dot"></div>
+          </div>
+
+          {/* Newly added events below */}
+          <div className="timeline-item right">
+            <Link to="/events/pintar-3" className="timeline-link">
+              <div className="timeline-content">
+                <p className="event-date">22 November 2025</p>
+                <h3 className="event-title">PINTAR 3</h3>
+                <img src="/projectspark-pku/Images/Events/pintar3_hero.jpg" alt="PINTAR 3" className="event-image" />
+              </div>
+            </Link>
+            <div className="timeline-dot"></div>
+          </div>
+
+          <div className="timeline-item left">
+            <Link to="/events/cultural-korea-exchange" className="timeline-link">
+              <div className="timeline-content">
+                <p className="event-date">4 December 2025</p>
+                <h3 className="event-title">CULTURAL KOREA EXCHANGE</h3>
+                <img src="/projectspark-pku/Images/Events/korea_cover.jpg" alt="Cultural Korea Exchange" className="event-image" />
+              </div>
+            </Link>
+            <div className="timeline-dot"></div>
+          </div>
+
+          <div className="timeline-item right">
+            <Link to="/events/grow-2" className="timeline-link">
+              <div className="timeline-content">
+                <p className="event-date">15 March 2026</p>
+                <h3 className="event-title">GROW 2</h3>
+                <img src="/projectspark-pku/Images/Events/DSCF5923.JPG" alt="GROW 2" className="event-image" />
+              </div>
+            </Link>
+            <div className="timeline-dot"></div>
+          </div>
+
+          <div className="timeline-item left">
+            <Link to="/events/pintar-4" className="timeline-link">
+              <div className="timeline-content">
+                <p className="event-date">10 May 2026</p>
+                <h3 className="event-title">PINTAR 4</h3>
+                <img src="/projectspark-pku/Images/Events/pintar4_cover.jpeg" alt="PINTAR 4" className="event-image" />
               </div>
             </Link>
             <div className="timeline-dot"></div>

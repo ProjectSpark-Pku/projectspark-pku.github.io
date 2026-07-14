@@ -1,7 +1,7 @@
 import React from 'react';
 import UnderConstruction from '../../components/UnderConstruction';
 
-function Shine1() {
+function CulturalKoreaExchange() {
   return (
     <main>
       <UnderConstruction />
@@ -9,4 +9,4 @@ function Shine1() {
   );
 }
 
-export default Shine1;
+export default CulturalKoreaExchange;
