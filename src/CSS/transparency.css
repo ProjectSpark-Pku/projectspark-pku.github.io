@@ -1,0 +1,105 @@
+/* =============================================
+   TRANSPARENCY PAGE
+   ============================================= */
+
+.transparency-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.transparency-hero {
+  background: #ffd95e;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.transparency-hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #090040;
+}
+
+.transparency-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #090040;
+}
+
+.transparency-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.transparency-section {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.transparency-section h2 {
+  font-size: 2rem;
+  color: #090040;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffd95e;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.transparency-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Credits specific styling */
+.credits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.credits-list li {
+  background: #f8fafc;
+  padding: 15px 20px;
+  border-left: 4px solid #ffd95e;
+  border-radius: 4px;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.credits-list a {
+  color: #090040;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.credits-list a:hover {
+  color: #2d3d92;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .transparency-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .transparency-section {
+    padding: 30px 20px;
+  }
+}

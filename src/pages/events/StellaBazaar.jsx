@@ -45,7 +45,7 @@ function StellaBazaar() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/projectspark-pku/Images/Icons/Events/Stella Bazaar/food.png" alt="Food Stall" />
+                <img src="/projectspark-pku/Images/Icons/Events/stall.png" alt="Food Stall" />
               </div>
               <div className="item-heading">The Food Stall</div>
               <div className="item-text">
@@ -55,7 +55,7 @@ function StellaBazaar() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/projectspark-pku/Images/Icons/Events/Stella Bazaar/community.png" alt="Community" />
+                <img src="/projectspark-pku/Images/Icons/Events/community.png" alt="Community" />
               </div>
               <div className="item-heading">Community First</div>
               <div className="item-text">
@@ -65,17 +65,7 @@ function StellaBazaar() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/projectspark-pku/Images/Icons/Events/Stella Bazaar/mission.png" alt="Mission" />
-              </div>
-              <div className="item-heading">Driven by Purpose</div>
-              <div className="item-text">
-                Every item sold wasn't just a transaction — it was a contribution to something bigger. The funds raised went directly toward the children we set out to help.
-              </div>
-            </div>
-
-            <div className="MainTopics-item">
-              <div className="item-icon">
-                <img src="/projectspark-pku/Images/Icons/Events/Stella Bazaar/start.png" alt="First Step" />
+                <img src="/projectspark-pku/Images/Icons/Events/flash.png" alt="First Step" />
               </div>
               <div className="item-heading">The First Spark</div>
               <div className="item-text">

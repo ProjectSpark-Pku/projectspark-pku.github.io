@@ -13,7 +13,7 @@ function OurWork() {
             <div className="timeline-content">
               <p className="event-date">21 February 2025</p>
               <h3 className="event-title">Founding of the Organization</h3>
-              <img src="/projectspark-pku/Images/Events/event1.png" alt="Founding" className="event-image" />
+              <img src="/projectspark-pku/Images/SVG/project_spark_logo.svg" alt="Founding" className="event-image" />
             </div>
             <div className="timeline-dot"></div>
           </div>
@@ -112,7 +112,7 @@ function OurWork() {
               <div className="timeline-content">
                 <p className="event-date">15 March 2026</p>
                 <h3 className="event-title">GROW 2</h3>
-                <img src="/projectspark-pku/Images/Events/DSCF5923.JPG" alt="GROW 2" className="event-image" />
+                <img src="/projectspark-pku/Images/Events/grow2_cover.jpg" alt="GROW 2" className="event-image" />
               </div>
             </Link>
             <div className="timeline-dot"></div>

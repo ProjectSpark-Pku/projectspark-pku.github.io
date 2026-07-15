@@ -48,7 +48,7 @@ function Pintar1() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/projectspark-pku/Images/Icons/Events/Pintar 1/Chemistry.png" alt="Chemistry" />
+                <img src="/projectspark-pku/Images/Icons/Events/flask.png" alt="Chemistry" />
               </div>
               <div className="item-heading">
                 Chemistry
@@ -63,7 +63,7 @@ function Pintar1() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/projectspark-pku/Images/Icons/Events/Pintar 1/Physics.png" alt="Physics" />
+                <img src="/projectspark-pku/Images/Icons/Events/physics.png" alt="Physics" />
               </div>
               <div className="item-heading">
                 Physics
@@ -78,7 +78,7 @@ function Pintar1() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/projectspark-pku/Images/Icons/Events/Pintar 1/Informatics.png" alt="Informatics" />
+                <img src="/projectspark-pku/Images/Icons/Events/pc.png" alt="Informatics" />
               </div>
               <div className="item-heading">
                 Informatics
@@ -93,7 +93,7 @@ function Pintar1() {
 
             <div className="MainTopics-item">
               <div className="item-icon">
-                <img src="/projectspark-pku/Images/Icons/Events/Pintar 1/English.png" alt="English" />
+                <img src="/projectspark-pku/Images/Icons/Events/chinese.png" alt="English" />
               </div>
               <div className="item-heading">
                 English
