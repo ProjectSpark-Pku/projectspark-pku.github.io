@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/transparency.css'; // Make sure to import the CSS
+import '../CSS/transparency.css';
 
 function Transparency() {
   return (
@@ -47,6 +47,42 @@ function Transparency() {
             </li>
             <li>
               <a href="https://www.flaticon.com/free-icons/geometry" title="geometry icons" target="_blank" rel="noopener noreferrer">Geometry icons created by Freepik - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/restoration" title="restoration icons" target="_blank" rel="noopener noreferrer">Restoration icons created by ekays.dsgn - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/rain" title="rain icons" target="_blank" rel="noopener noreferrer">Rain icons created by tulpahn - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/eco-friendly" title="eco friendly icons" target="_blank" rel="noopener noreferrer">Eco friendly icons created by kmg design - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/indonesia" title="indonesia icons" target="_blank" rel="noopener noreferrer">Indonesia icons created by Magnific - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/ribbon" title="ribbon icons" target="_blank" rel="noopener noreferrer">Ribbon icons created by Good Ware - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/kerupuk" title="kerupuk icons" target="_blank" rel="noopener noreferrer">Kerupuk icons created by Erifqi Zetiawan - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/dalgona-candy" title="dalgona candy icons" target="_blank" rel="noopener noreferrer">Dalgona candy icons created by afif fudin - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/international-partner" title="international partner icons" target="_blank" rel="noopener noreferrer">International partner icons created by I Putu Kharismayadi - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/high-five" title="high five icons" target="_blank" rel="noopener noreferrer">High five icons created by Magnific - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/idea" title="idea icons" target="_blank" rel="noopener noreferrer">Idea icons created by surang - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/hydroponic" title="hydroponic icons" target="_blank" rel="noopener noreferrer">Hydroponic icons created by Good Ware - Flaticon</a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/academy" title="academy icons" target="_blank" rel="noopener noreferrer">Academy icons created by berkahicon - Flaticon</a>
             </li>
           </ul>
         </section>
