@@ -76,7 +76,7 @@ function Members() {
                 const roleB = b.role ? b.role.toLowerCase() : '';
                 
                 const getRank = (role) => {
-                  if (role.includes('leader') || role.includes('head') || role.includes('president')) return 1;
+                  if (role.includes('leader') || role.includes('head') || role.includes('president') || role.includes('coordinator')) return 1;
                   if (role.includes('vice')) return 2;
                   if (role.includes('manager')) return 3;
                   return 4; // Member or other
