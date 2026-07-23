@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { supabase } from '../supabaseClient';
+import GoogleSignIn from '../components/GoogleSignIn';
 
 function Auth({ isSignUp: initialSignUp = false }) {
   const [isSignUp, setIsSignUp] = useState(initialSignUp);
@@ -54,10 +55,7 @@ function Auth({ isSignUp: initialSignUp = false }) {
               </div>
             )}
 
-            <button type="button" className="login-google-btn">
-              <span className="login-google-icon">G</span>
-              Continue with Google
-            </button>
+            <GoogleSignIn />
 
             <div className="login-divider">
               <span>or</span>
